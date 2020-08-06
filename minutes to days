@@ -1,0 +1,25 @@
+public class Program
+{
+	public static void main(String[] args) 
+  {
+		printYandD(-525600);
+	}
+	
+	public static void printYandD(long minutes){
+	
+		if (minutes < 0)
+    {
+		    System.out.println("Invalid Value");
+		}
+		else 
+    {
+		long years = minutes/525600; 
+		System.out.println(years + " years");
+		long days = minutes % 525600;  
+		days = days / 1440;
+		System.out.println(days + " days");
+		System.out.println (minutes + " min" + " = " + years + " y" + " and " + days + " d");
+	    }
+	    
+	}
+}
